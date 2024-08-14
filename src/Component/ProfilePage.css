@@ -1,0 +1,57 @@
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Change to row for horizontal alignment */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  padding: 50px;
+  background-color: black;
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+.profile-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  
+}
+
+.profile-card h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.profile-card p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.profile-link {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.profile-link:hover {
+  background-color: #555;
+}
+
+/* Target the first card in the row */
+.profile-card:first-child {
+  background: #e0f7fa; /* Example: Light blue background */
+  border: 2px solid #00796b; /* Example: Dark teal border */
+}
+.profile-card:last-child {
+  background: #e0f7fa; /* Example: Light blue background */
+  border: 2px solid #00796b; /* Example: Dark teal border */
+}
+

@@ -1,0 +1,270 @@
+/* Navbar Container */
+.navbar {
+    background: black;
+    padding: 1.5rem;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Navbar Logo - Left Corner */
+.navbar-left {
+    position: absolute;
+    left: 1rem;
+}
+
+.navbar-logo a {
+    color: #f7fafa;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navbar Links - Center */
+.navbar-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-links a {
+    color: #f7fafa;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links a:hover {
+    color: #ccc;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    background-color: black;
+    color: #080808;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-menu .dropdown.show {
+    display: flex;
+   
+}
+
+/* Avatar Icon */
+.profile-menu {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(177, 212, 218);
+    
+  }
+  
+  /* Landing Page Styles */
+  .h1 {
+    margin-top: 100px;
+  }
+  
+  .landingImage {
+    margin: 10px auto;
+    display: block;
+    max-width: 100%;
+    border-radius: 30px;
+  }
+  
+  /* Card Section Styles */
+  .card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .card11-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .card11 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: calc(50% - 40px); /* Adjust to show two cards per row */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px; /* Ensure all cards have the same height */
+  }
+  
+  .card11 img {
+    max-width: 100%;
+    border-radius: 20px;
+    height: 150px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure images cover the space */
+  }
+  
+  .card11 h2 {
+    margin-top: 0px;
+  }
+  
+  .card11 p {
+    margin: 0;
+    flex-grow: 1; /* Ensure the content grows to fill the space */
+  }
+  
+  .card11 .span {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .learn-more-btn {
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .card11:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Media queries to adjust card widths on smaller screens */
+  @media (max-width: 768px) {
+    .card11 {
+      width: calc(50% - 40px);
+    }
+  
+    .card11-container::after {
+      content: '';
+      flex-grow: 1;
+      max-width: calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card11 {
+      width: calc(100% - 40px);
+    }
+  
+    .card11-container::after {
+      display: none;
+    }
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100vw;
+    margin: 0;
+    position: relative;
+  }
+  
+  .social-icons {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Newsletter Section */
+  .newsletter {
+    margin: 40px 0;
+  }
+  
+  .newsletter h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .newsletter-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .newsletter-form .ant-form-item {
+    margin-bottom: 0;
+    width: 90%;
+    
+  }
+  
+  .newsletter-form .ant-input {
+    width: calc(100% - 120px);
+    margin-right: 10px;
+    border-radius: 25px;
+  }
+  
+  .newsletter-form .ant-btn {
+    width: 120px;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+  

@@ -1,0 +1,114 @@
+/* Main Container Styles */
+.main-container {
+  display: flex;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  padding-top: 60px; /* Add padding to avoid overlap */
+}
+
+/* Contact Us Section Styles */
+.contact-us-section {
+  padding: 60px 20px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Contact Form Container Styles */
+.contact-form-container {
+  display: flex;
+  flex-direction: row; /* Change to row for horizontal alignment */
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 2px solid black; /* Add border with color */
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+  padding: 20px; /* Optional: Add padding inside the container */
+}
+
+/* Contact Image Styles */
+.contact-image {
+  margin-top: 70px;
+  flex: 1;
+  max-width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%; /* Adjust to fit flex container */
+  margin-right: 20px;
+}
+
+.contact-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Contact Form and Info Styles */
+.contact-form-info {
+  flex: 1;
+  max-width: 45%;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Contact Info Styles */
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info h2 {
+  margin-top: 0;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.home-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}

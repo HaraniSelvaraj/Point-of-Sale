@@ -1,0 +1,51 @@
+.dashboard-panel {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  overflow: auto;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.dashboard-panel.open {
+  left: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  padding: 20px;
+}
+
+.widget {
+  background-color: #444;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product-link {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.product-link:hover {
+  color: #0056b3;
+}
